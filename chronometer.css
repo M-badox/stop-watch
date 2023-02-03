@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+
+:root
+{
+    --coloring:#ffa600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+ background-color:#03a9ef;     
+} 
+    #main
+{
+    background-color:var(--coloring);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}  
+
+#header #title h1,
+#header #proj h1
+{
+   padding-bottom: 20px;
+   font-size: 49px;
+   text-transform: uppercase;
+}
+#header #proj h1
+{
+   font-weight: 300; 
+}
+#time
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+#time p #sec,
+#time p #min
+{
+    font-size: 41px;
+}
+ #controllers 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} 
+#controllers div
+{
+   padding: 10px; 
+}
+#controllers div .btn
+{
+    border: 1px solid rgb(32, 29, 29);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: var(--coloring);
+    font-size: 21px;
+    padding: 10px;
+    transition: 0s;
+}
+#controllers div .btn:hover
+{
+    background-color: black;
+    color: var(--coloring);
+    cursor: pointer;
+    transition: 1s;
+};
